@@ -1,12 +1,16 @@
 import 'package:e_commerce/Home%20Screen.dart';
 import 'package:e_commerce/ui/auth/login/Login%20Screen.dart';
 import 'package:e_commerce/utils/Splash%20Screen.dart';
+import 'package:e_commerce/utils/blocObserver.dart';
 import 'package:e_commerce/utils/my_theme.dart';
 import 'package:e_commerce/ui/auth/register/register.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
+  Bloc.observer = MyBlocObserver();
+
   runApp( MyApp());
 }
 
